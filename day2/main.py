@@ -1,4 +1,4 @@
-# Data Types
+# Data Types - day 2
 
 # 1. Strings
 # print("niggers")\
