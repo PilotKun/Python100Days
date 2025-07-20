@@ -50,9 +50,9 @@ while len(guessed_states) < 50:
         break
     if answer_state in all_states:
         guessed_states.append(answer_state)
-        t = t.Turtle()
-        t.hideturtle()
-        t.penup()
-        state_data = data[data.state == answer_state]
-        t.goto(int(state_data.x), int(state_data.y))
-        t.write(answer_state)
+    writer = t.Turtle()
+    writer.hideturtle()
+    writer.penup()
+    state_data = data[data.state == answer_state]
+    writer.goto(int(state_data.x.iloc[0]), int(state_data.y.iloc[0]))
+    writer.write(answer_state)
