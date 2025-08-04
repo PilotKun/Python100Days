@@ -21,3 +21,9 @@ short_names = [name for name in names if len(name) < 5]
 long_names = [name.upper() for name in names if len(name) >= 5]  
 print(short_names)
 print(long_names)
+
+# * Dictionary Comprehensions: new_dict = {new_key: new_value for item in list} 
+# OR 
+# * new_dict = {new_key: new_value for (key, value) in dict.items()} 
+# AND
+# * Conditional Dictionary Comprehensions: new_dict = {new_key: new_value for item in list if test}
